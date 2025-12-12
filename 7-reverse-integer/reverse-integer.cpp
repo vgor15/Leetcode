@@ -1,14 +1,16 @@
 class Solution {
 public:
-    int reverse(int x) {
-        int rev=0;
-        int temp=x;
-        for(;temp;temp/=10)
-        {
-            if (rev > INT_MAX/10 || rev < INT_MIN/10)
-                return 0;
-            rev=rev*10+(temp%10);
+    bool isPalindrome(int x) {
+        if (x < 0 || (x % 10 == 0 && x != 0)) return false;
+
+        int rev = 0;
+        while (x > rev) {
+            rev = rev * 10 + x % 10;
+            x /= 10;
         }
-        return rev;
+
+        // For even digits: x == rev
+        // For odd digits: x == rev/10
+        return x == rev || x == rev/10;
     }
 };
