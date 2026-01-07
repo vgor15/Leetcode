@@ -62,7 +62,7 @@ This repository is **actively updated** as I solve more problems.
 
 ## 🔗 Profile
 
-- **LeetCode**: https://leetcode.com/
+- **LeetCode**:https://leetcode.com/](https://leetcode.com/u/vgor1503/
 - **GitHub**: https://github.com/vgor15
 
 ---
